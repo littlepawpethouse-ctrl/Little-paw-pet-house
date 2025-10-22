@@ -1,0 +1,314 @@
+<!-- Little Paw Pet House — Final three-language landing page (AliCattery-style, cozy) -->
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Little Paw Pet House — Trusted Breeder in Penang</title>
+  <meta name="description" content="Trusted Breeder of British Shorthair & Munchkin, Napoleon, Minuet in Penang. Book a visit via WhatsApp." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --bg-1:#fffaf5; --bg-2:#f7efe6; --accent:#C77A5A; --muted:#6B6B6B;
+    }
+    body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,var(--bg-1),var(--bg-2));overflow-x:hidden}
+    /* paw falling */
+    .paw{position:fixed;top:-60px;font-size:1.4rem;color:rgba(199,122,90,0.18);animation:fall linear infinite;z-index:0}
+    @keyframes fall{0%{transform:translateY(0) rotate(0deg);opacity:1}100%{transform:translateY(110vh) rotate(360deg);opacity:0}}
+    /* sticky header */
+    header.sticky{position:sticky;top:0;backdrop-filter:blur(6px);background:linear-gradient(180deg,rgba(255,250,245,0.7),rgba(255,250,245,0.5));z-index:40}
+    .lang-btn{border-radius:9999px;padding:.25rem .5rem;font-weight:600}
+    /* card image height */
+    .kitten-img{height:220px;object-fit:cover;border-radius:1rem}
+  </style>
+</head>
+<body class="relative text-gray-800">
+
+  <!-- falling paws (created by JS) -->
+
+  <!-- Header -->
+  <header class="sticky top-0">
+    <div class="max-w-6xl mx-auto flex items-center justify-between gap-4 p-4 lg:p-6">
+      <div class="flex items-center gap-4">
+        <nav class="hidden md:flex gap-6 text-sm font-medium text-[color:var(--muted)]">
+          <a href="#home" class="hover:text-[color:var(--accent)]">Home</a>
+          <a href="#kittens" class="hover:text-[color:var(--accent)]">Available Kittens</a>
+          <a href="#breeds" class="hover:text-[color:var(--accent)]">Breeds</a>
+          <a href="#gallery" class="hover:text-[color:var(--accent)]">Environment</a>
+          <a href="#contact" class="hover:text-[color:var(--accent)]">Contact</a>
+        </nav>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <div id="langSwitch" class="flex items-center gap-2">
+          <button class="lang-btn" data-lang="zh">🇨🇳 中文</button>
+          <button class="lang-btn" data-lang="en">🇬🇧 English</button>
+          <button class="lang-btn" data-lang="ms">🇲🇾 Malay</button>
+        </div>
+        <a href="https://wa.me/601161006368" target="_blank" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[color:var(--accent)] text-white font-semibold shadow">WhatsApp to Book</a>
+        <a href="https://wa.me/601161006368" class="sm:hidden inline-flex items-center px-3 py-2 rounded-full bg-[color:var(--accent)] text-white">WA</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative z-10">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-8 p-6 lg:p-12">
+      <div class="space-y-4">
+        <h1 id="heroTitle" class="text-3xl lg:text-4xl font-extrabold leading-tight">Trusted Breeder of British Shorthair & Munchkin, Napoleon, Minuet in Penang</h1>
+        <p id="heroSubtitle" class="text-[color:var(--muted)] max-w-xl">Cozy home environment • Certified bloodlines • Gentle, well-socialized kittens. Book a private visit via WhatsApp.</p>
+        <div class="flex gap-3 mt-4">
+          <a href="https://wa.me/601161006368?text=Hi%20I%27d%20like%20to%20book%20a%20visit%20to%20see%20the%20kittens" target="_blank" class="px-5 py-3 rounded-lg bg-[color:var(--accent)] text-white font-semibold shadow">📅 Book a Visit</a>
+          <a href="#kittens" class="px-5 py-3 rounded-lg border border-[color:var(--accent)] text-[color:var(--accent)] font-medium">See Available Kittens</a>
+        </div>
+        <p class="text-xs text-[color:var(--muted)] mt-3">By appointment only — calm visits for a stress-free experience.</p>
+      </div>
+      <div class="rounded-3xl overflow-hidden shadow-lg bg-white">
+        <img src="https://www.happypawsus.com/cdn/shop/collections/goldenbsh1.png?v=1731425631" alt="hero kitten" class="w-full h-96 object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Available Kittens -->
+  <section id="kittens" class="relative z-10 py-12">
+    <div class="max-w-6xl mx-auto p-6">
+      <h2 class="text-2xl font-semibold">Available Kittens / 猫咪 / Anak Kucing </h2>
+      <p class="text-[color:var(--muted)] mt-2">Click any card to contact via WhatsApp or view more details.</p>
+
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+<!-- 1 -->
+<article class="bg-white rounded-2xl p-4 shadow-md">
+  <img src="https://www.happypawsus.com/cdn/shop/collections/goldenbsh1.png?v=1731425631"
+       alt="Golden BSH"
+       class="h-[260px] w-full object-cover rounded-md shadow-md" />
+  <div class="mt-3">
+    <h3 class="font-semibold">金渐层 / Golden — British Shorthair</h3>
+    <p class="text-sm text-[color:var(--muted)]">温顺，黏人，适合家庭。<br/>Calm, affectionate — perfect for families.</p>
+    <div class="mt-3 flex gap-2">
+      <a href="https://wa.me/601161006368?text=Hi%20I%27m%20interested%20in%20the%20Golden%20kitten"
+         target="_blank"
+         class="text-sm px-3 py-2 rounded-full border border-[color:var(--accent)] font-medium">WhatsApp</a>
+      <button class="text-sm px-3 py-2 rounded-full bg-[color:var(--bg-2)]">View more</button>
+    </div>
+  </div>
+</article>
+
+<!-- 2 -->
+<article class="bg-white rounded-2xl p-4 shadow-md">
+  <img src="https://media.stork.pet/wp-content/uploads/2025/02/S__7274512.jpg"
+       alt="Lilac Golden"
+       class="h-[260px] w-full object-cover rounded-md shadow-md" />
+  <div class="mt-3">
+    <h3 class="font-semibold">紫金渐层 / Golden lilac British Shorthair</h3>
+    <p class="text-sm text-[color:var(--muted)]">稀有色系，颜值吸睛。<br/>Rare lilac-golden tones — eye-catching.</p>
+    <div class="mt-3 flex gap-2">
+      <a href="https://wa.me/601161006368?text=Hi%20I%27m%20interested%20in%20this%20Golden%20lilac"
+         target="_blank"
+         class="text-sm px-3 py-2 rounded-full border border-[color:var(--accent)] font-medium">WhatsApp</a>
+      <button class="text-sm px-3 py-2 rounded-full bg-[color:var(--bg-2)]">View more</button>
+    </div>
+  </div>
+</article>
+
+<!-- 3 -->
+<article class="bg-white rounded-2xl p-4 shadow-md">
+  <img src="https://lh3.googleusercontent.com/p/AF1QipNLn4HZSD2Gj6kwddHmnCTxLyBwfTkWrpG-SiZn=s1360-w1360-h1020-rw"
+       alt="Chocolate Golden"
+       class="h-[260px] w-full object-cover rounded-md shadow-md" />
+  <div class="mt-3">
+    <h3 class="font-semibold">巧金渐层 / Chocolate Golden Shaded</h3>
+    <p class="text-sm text-[color:var(--muted)]">圆脸萌态，活泼亲人。<br/>Round face and playful.</p>
+    <div class="mt-3 flex gap-2">
+      <a href="https://wa.me/601161006368?text=Hi%20I%27m%20interested%20in%20the%20ChocolateGoldenShaded%20kitten"
+         target="_blank"
+         class="text-sm px-3 py-2 rounded-full border border-[color:var(--accent)] font-medium">WhatsApp</a>
+      <button class="text-sm px-3 py-2 rounded-full bg-[color:var(--bg-2)]">View more</button>
+    </div>
+  </div>
+</article>
+
+<!-- 4 -->
+<article class="bg-white rounded-2xl p-4 shadow-md">
+  <img src="https://g-search1.alicdn.com/img/bao/uploaded/i4/i3/2209928344101/O1CN01HgfHDD1gAJIOZJLjj_!!4611686018427384357-0-item_pic.jpg_360x360q90.jpg_.webp"
+       alt="Blue Golden"
+       class="h-[260px] w-full object-cover rounded-md shadow-md" />
+  <div class="mt-3">
+    <h3 class="font-semibold">蓝金渐层 / Blue Golden Shaded</h3>
+    <p class="text-sm text-[color:var(--muted)]">稀有色系，颜值吸睛。<br/>Rare blue-golden tones — eye-catching.</p>
+    <div class="mt-3 flex gap-2">
+      <a href="https://wa.me/601161006368?text=Hi%20I%27m%20interested%20in%20the%20BlueGolden%20kitten"
+         target="_blank"
+         class="text-sm px-3 py-2 rounded-full border border-[color:var(--accent)] font-medium">WhatsApp</a>
+      <button class="text-sm px-3 py-2 rounded-full bg-[color:var(--bg-2)]">View more</button>
+    </div>
+  </div>
+</article>
+
+<!-- 5 -->
+<article class="bg-white rounded-2xl p-4 shadow-md">
+  <img src="https://tse1.mm.bing.net/th/id/OIP.K3NDfd_RfIFMsLdngARzOgAAAA?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+       alt="Napoleon"
+       class="h-[260px] w-full object-cover rounded-md shadow-md" />
+  <div class="mt-3">
+    <h3 class="font-semibold">拿破仑 / Napoleon</h3>
+    <p class="text-sm text-[color:var(--muted)]">小巧可爱，脸型温和。<br/>Compact, sweet-faced lap cat.</p>
+    <div class="mt-3 flex gap-2">
+      <a href="https://wa.me/601161006368?text=Hi%20I%27m%20interested%20in%20the%20Napoleon%20kitten"
+         target="_blank"
+         class="text-sm px-3 py-2 rounded-full border border-[color:var(--accent)] font-medium">WhatsApp</a>
+      <button class="text-sm px-3 py-2 rounded-full bg-[color:var(--bg-2)]">View more</button>
+    </div>
+  </div>
+</article>
+
+<!-- 6 -->
+<article class="bg-white rounded-2xl p-4 shadow-md">
+  <img src="https://pic2.zhimg.com/v2-ecf3d53bc6edee6b9b5488e1e3d16b25_r.jpg"
+       alt="Munchkin"
+       class="h-[260px] w-full object-cover rounded-md shadow-md" />
+  <div class="mt-3">
+    <h3 class="font-semibold">曼基康 / Munchkin</h3>
+    <p class="text-sm text-[color:var(--muted)]">短腿萌态，活泼亲人。<br/>Short-legged and playful.</p>
+    <div class="mt-3 flex gap-2">
+      <a href="https://wa.me/601161006368?text=Hi%20I%27m%20interested%20in%20the%20Munchkin%20Golden%20kitten"
+         target="_blank"
+         class="text-sm px-3 py-2 rounded-full border border-[color:var(--accent)] font-medium">WhatsApp</a>
+      <button class="text-sm px-3 py-2 rounded-full bg-[color:var(--bg-2)]">View more</button>
+    </div>
+  </div>
+</article>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Breeds / 品种介绍 -->
+  <section id="breeds" class="relative z-10 py-12">
+    <div class="max-w-6xl mx-auto p-6">
+      <h2 class="text-2xl font-semibold">Breeds / 品种 / Jenis</h2>
+      <div class="mt-6 grid md:grid-cols-4 gap-6 text-sm text-[color:var(--muted)]">
+        <div class="bg-white p-4 rounded-2xl shadow-sm">
+          <h4 class="font-semibold">British Shorthair</h4>
+          <p class="mt-2">英短：圆脸厚毛，性格温和，适合家庭。<br/>English: Plush coat, calm temperament — family-friendly.<br/>Malay: Bulu lebat, bersifat tenang — sesuai untuk keluarga.</p>
+        </div>
+        <div class="bg-white p-4 rounded-2xl shadow-sm">
+          <h4 class="font-semibold">Munchkin (曼基康)</h4>
+          <p class="mt-2">短腿型，活泼顽皮，性情亲人。<br/>Short-legged, playful and affectionate.<br/>Kaki pendek, suka bermain, mesra.</p>
+        </div>
+        <div class="bg-white p-4 rounded-2xl shadow-sm">
+          <h4 class="font-semibold">Napoleon (拿破仑)</h4>
+          <p class="mt-2">体形小巧，面部温和，适合喜爱抱猫的人。<br/>Small, sweet-faced lap cat.<br/>Saiz kecil, muka comel sesuai untuk dipeluk.</p>
+        </div>
+        <div class="bg-white p-4 rounded-2xl shadow-sm">
+          <h4 class="font-semibold">Minuet (米努特)</h4>
+          <p class="mt-2">外型柔和，性格温顺，适合室内生活。<br/>Gentle appearance and affectionate nature — indoor-friendly.<br/>Muka manis, sifat mesra, sesuai hidup dalam rumah.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Environment -->
+  <section id="gallery" class="relative z-10 py-12">
+    <div class="max-w-6xl mx-auto p-6">
+      <h2 class="text-2xl font-semibold">Environment / 猫舍环境 / Persekitaran</h2>
+      <p class="text-[color:var(--muted)] mt-2">Cozy, air-conditioned rooms — photos are for reference.</p>
+      <div class="mt-6 grid md:grid-cols-3 gap-4">
+        <div class="rounded-xl overflow-hidden"><img src="https://images.pexels.com/photos/20787/pexels-photo.jpg" alt="env1" class="w-full h-56 object-cover" /></div>
+        <div class="rounded-xl overflow-hidden"><img src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg" alt="env2" class="w-full h-56 object-cover" /></div>
+        <div class="rounded-xl overflow-hidden"><img src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg" alt="env3" class="w-full h-56 object-cover" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="relative z-10 py-12">
+    <div class="max-w-6xl mx-auto p-6 bg-white rounded-2xl shadow-sm">
+      <h2 class="text-2xl font-semibold">Contact / 联系 / Hubungi</h2>
+      <div class="mt-4 grid md:grid-cols-2 gap-6 items-center">
+        <div>
+          <p class="text-[color:var(--muted)]">Address: 323, Lorong Batu Maung 2, 11900 Bayan Lepas, Penang</p>
+          <p class="text-[color:var(--muted)] mt-2">WhatsApp: <a href="https://wa.me/601161006368" class="text-[color:var(--accent)] font-medium">011-6100 6368</a></p>
+          <p class="text-[color:var(--muted)] mt-2">Open: By appointment only</p>
+          <div class="mt-4 flex gap-3">
+            <a href="https://wa.me/601161006368?text=Hi%20I%27d%20like%20to%20book%20a%20visit%20to%20see%20the%20kittens" target="_blank" class="px-5 py-3 rounded-lg bg-[color:var(--accent)] text-white font-semibold shadow">WhatsApp to Book</a>
+            <a href="tel:+601161006368" class="px-5 py-3 rounded-lg border border-[color:var(--accent)] font-medium">Call</a>
+          </div>
+        </div>
+        <div class="text-sm text-[color:var(--muted)]">
+          <p>We provide aftercare guidance and  support for every rehome. Photos are reference only — please book a visit to see the kittens in person.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-6 text-center text-sm text-[color:var(--muted)] relative z-10">
+    <p>© <span id="year"></span> Little Paw Pet House • 323, Lorong Batu Maung 2, 11900 Bayan Lepas, Penang</p>
+  </footer>
+
+  <script>
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // create falling paws
+    document.addEventListener('DOMContentLoaded', ()=>{
+      const pawSymbols = ['🐾','🐾','🐾'];
+      const count = 20;
+      for(let i=0;i<count;i++){
+        const d = document.createElement('div');
+        d.className='paw';
+        d.textContent = pawSymbols[Math.floor(Math.random()*pawSymbols.length)];
+        d.style.left = Math.random()*100 + 'vw';
+        d.style.fontSize = (12 + Math.random()*18) + 'px';
+        d.style.animationDuration = (6 + Math.random()*8) + 's';
+        d.style.animationDelay = (Math.random()*6) + 's';
+        document.body.appendChild(d);
+      }
+    });
+
+    // language translations (simple key-value)
+    const i18n = {
+      zh: {
+        heroTitle: 'Trusted Breeder of British Shorthair & Munchkin, Napoleon, Minuet in Penang',
+        heroSubtitle: '温馨养育 • 血统可查 • 友善社交化小猫。通过 WhatsApp 预约参观。',
+        available: '在售猫咪',
+        breeds: '品种介绍',
+        environment: '猫舍环境',
+        contact: '联系我们'
+      },
+      en: {
+        heroTitle: 'Trusted Breeder of British Shorthair & Munchkin, Napoleon, Minuet in Penang',
+        heroSubtitle: 'Cozy home environment • Certified bloodlines • Gentle, well-socialized kittens. Book a private visit via WhatsApp.',
+        available: 'Available Kittens',
+        breeds: 'Breeds',
+        environment: 'Environment',
+        contact: 'Contact'
+      },
+      ms: {
+        heroTitle: 'Trusted Breeder of British Shorthair & Munchkin, Napoleon, Minuet in Penang',
+        heroSubtitle: 'Persekitaran rumah yang selesa • Garis darah disahkan • Anak kucing mesra dan sosial. Tempah lawatan melalui WhatsApp.',
+        available: 'Anak Kucing Dijual',
+        breeds: 'Jenis',
+        environment: 'Persekitaran',
+        contact: 'Hubungi'
+      }
+    };
+
+    document.getElementById('langSwitch').addEventListener('click', (e)=>{
+      const btn = e.target.closest('button');
+      if(!btn) return;
+      const lang = btn.dataset.lang;
+      if(!lang) return;
+      const t = i18n[lang];
+      document.getElementById('heroTitle').textContent = t.heroTitle;
+      document.getElementById('heroSubtitle').textContent = t.heroSubtitle;
+      // simple replacements for section titles
+      document.querySelector('#kittens h2').textContent = `${t.available} / 在售猫咪 / Anak Kucing Dijual`;
+      document.querySelector('#breeds h2').textContent = `${t.breeds} / 品种 / Jenis`;
+      document.querySelector('#gallery h2').textContent = `${t.environment} / 猫舍环境 / Persekitaran`;
+      document.querySelector('#contact h2').textContent = `${t.contact} / 联系 / Hubungi`;
+    });
+  </script>
+</body>
+</html>
